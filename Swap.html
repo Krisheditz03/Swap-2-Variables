@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="height: 100vh; background: linear-gradient(#b92b27,#1565C0);">
+    
+    <div>
+        <div style="font-size: 50px; justify-content: center; text-align: center;">Swap Two Numbers</div>
+        <div style="text-align: center; padding-top: 50px;">
+            
+            <label for="num1">Variable 1</label>
+            <input style="border: 2px solid red; border-radius: 5px;" type="number" id="num1" >
+
+            <br><br>
+
+            <label for="num2">Variable 2</label>
+            <input style="border: 2px solid red; border-radius: 5px;" type="number" id="num2">
+            
+
+            <br><br>
+
+            <button style="border: 2px solid red; border-radius: 5px; background-color: yellow;" onclick="swap()">Swap</button>
+
+            <br><br>
+            
+            
+            <label for="ans1">Variable 1 </label>
+            <p id="ans1"></p>
+
+            <label for="ans2">Variable 2 </label>
+            <p id="ans2"></p>
+           
+        </div>
+    </div>
+
+    <script>
+        function swap() {
+            var a,b,c;
+            a=Number(document.getElementById("num1").value);
+            b=Number(document.getElementById("num2").value);
+            c=a;
+            a=b;
+            b=c;
+            document.getElementById("ans1").innerHTML=a;
+            document.getElementById("ans2").innerHTML=b;
+        }
+    </script>
+
+</body>
+</html>
